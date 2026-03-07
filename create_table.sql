@@ -1,6 +1,7 @@
 CREATE TABLE tickets(
     id SERIAL PRIMARY KEY,
-    id_user INTEGER NOT NULL,
+    ticket_id INTEGER NOT NULL UNIQUE,
+    user_id INTEGER NOT NULL,
     title VARCHAR(255) NOT NULL,
     body TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
