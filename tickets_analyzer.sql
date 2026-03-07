@@ -12,3 +12,5 @@ SELECT COUNT(*) FROM TICKETS WHERE user_id=4;
 
 --Number of tickets per user
 SELECT user_id, COUNT(*) as number_of_tickets FROM tickets GROUP BY user_id ORDER BY number_of_tickets DESC;
+
+

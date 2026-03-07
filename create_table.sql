@@ -1,4 +1,4 @@
-CREATE TABLE tickets(
+CREATE TABLE IF NOT EXISTS tickets(
     id SERIAL PRIMARY KEY,
     ticket_id INTEGER NOT NULL UNIQUE,
     user_id INTEGER NOT NULL,
